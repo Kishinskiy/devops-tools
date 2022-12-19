@@ -19,6 +19,7 @@ nvim +PackerSync
 
 echo "======== Add Aliases ========"
 cat <<EOT >> ~/.zshrc
+
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias mypubkey="cat ~/.ssh/id_rsa.pub|pbcopy && echo 'ssh public key copied in buffer'"
@@ -42,7 +43,6 @@ alias dos="dosbox -conf $HOME/.dosbox.conf $HOME/DOS"
 alias ytd="youtube-dl"
 alias ec="nvim $HOME/.zshrc"
 alias sc="source $HOME/.zshrc"
-
 
 alias -s {md,json,rs,css,ts,js,html,yaml,yml,conf}=nvim
 EOT
